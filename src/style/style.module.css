@@ -1,0 +1,72 @@
+.container{
+    padding: 1rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.grid .card {
+    text-transform: capitalize;
+    border: 1px solid #ccc;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s ease-in;
+    transition-property: border-color box-shadow background-color;
+    cursor: pointer;
+    border-radius: 4px;
+    user-select: none;
+
+}
+.grid .card.selected{
+    background-color: rgba(138, 43, 226 , 0.2);
+    border-color: rgb(138, 43, 226);
+}
+
+.grid .card:hover {
+    border-color: rgb(138, 43, 226);
+    box-shadow: 0 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+.breed{
+    margin-bottom: 5rem;
+}
+
+.breed span {
+    text-transform: capitalize;
+}
+
+.breed .imageContainer{
+    max-width: 300px;
+    margin-top: 1rem;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+}
+.breed .imageContainer img {
+    width: 100%;
+    margin: 0;
+}
+
+
+.breed .imageContainer.fetching::after{
+    content: "Loading....";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+}
+
+@media screen and (min-width: 800px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
