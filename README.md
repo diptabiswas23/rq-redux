@@ -1,7 +1,9 @@
 # React-Query + Redux + Tracked properties
 
 *** Get started *** 
-`npm i`
+```js
+npm i
+```
 
 *** Run Sever ***
 ```js
