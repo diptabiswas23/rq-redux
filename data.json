@@ -1,0 +1,142 @@
+{
+  "data" : [
+    {
+      "name": "Maharashtra",
+      "type": "State",
+      "details": {
+        "capital": "Mumbai",
+        "famousFor": "Bollywood, Financial Hub"
+      },
+      "children": [
+        {
+          "name": "Pune",
+          "type": "District",
+          "details": {
+            "famousFor": "IT Hub, Historical Sites"
+          },
+          "children": [
+            {
+              "name": "Sinhagad Fort",
+              "type": "Place",
+              "details": {
+                "history": "Battle of Sinhagad (1670)",
+                "altitude": "1312m"
+              },
+              "children": []
+            },
+            {
+              "name": "Dagdusheth Ganpati",
+              "type": "Temple",
+              "details": {
+                "festival": "Ganesh Chaturthi",
+                "location": "Pune City"
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tamil Nadu",
+      "type": "State",
+      "details": {
+        "capital": "Chennai",
+        "famousFor": "Temples, Classical Music"
+      },
+      "children": [
+        {
+          "name": "Madurai",
+          "type": "District",
+          "details": {
+            "famousFor": "Meenakshi Temple"
+          },
+          "children": [
+            {
+              "name": "Meenakshi Amman Temple",
+              "type": "Temple",
+              "details": {
+                "age": "2500+ years old",
+                "style": "Dravidian Architecture"
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rajasthan",
+      "type": "State",
+      "details": {
+        "capital": "Jaipur",
+        "famousFor": "Deserts, Palaces"
+      },
+      "children": [
+        {
+          "name": "Jaisalmer",
+          "type": "District",
+          "details": {
+            "famousFor": "Golden Fort"
+          },
+          "children": [
+            {
+              "name": "Jaisalmer Fort",
+              "type": "Fort",
+              "details": {
+                "builtBy": "Rawal Jaisal (1156 AD)",
+                "material": "Yellow Sandstone"
+              },
+              "children": []
+            },
+            {
+              "name": "Sam Sand Dunes",
+              "type": "Desert",
+              "details": {
+                "activities": ["Camel Safari", "Dune Bashing"]
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Uttar Pradesh",
+      "type": "State",
+      "details": {
+        "capital": "Lucknow",
+        "famousFor": "Historical Monuments, Street Food"
+      },
+      "children": [
+        {
+          "name": "Varanasi",
+          "type": "District",
+          "details": {
+            "famousFor": "Ghats & Temples"
+          },
+          "children": [
+            {
+              "name": "Kashi Vishwanath Temple",
+              "type": "Temple",
+              "details": {
+                "importance": "One of 12 Jyotirlingas",
+                "reconstructedBy": "Ahilyabai Holkar (1777)"
+              },
+              "children": []
+            },
+            {
+              "name": "Dashashwamedh Ghat",
+              "type": "Ghat",
+              "details": {
+                "famousFor": "Ganga Aarti",
+                "location": "Near Kashi Vishwanath Temple"
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

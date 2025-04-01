@@ -53,7 +53,7 @@ const useQueryListener = <T,>({ client, key, listener }: Props<T>) => {
       queryKey: key
     });
   }
-  
+
 
   return {
     invalidateQuery,

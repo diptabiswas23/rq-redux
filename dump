@@ -1,0 +1,37 @@
+// {
+//   "name": "West Bengal",
+//   "type": "State",
+//   "details": {
+//     "capital": "Kolkata",
+//     "famousFor": "Tea Gardens, Literature"
+//   },
+//   "children": [
+//     {
+//       "name": "Darjeeling",
+//       "type": "District",
+//       "details": {
+//         "famousFor": "Tea Gardens, Toy Train"
+//       },
+//       "children": [
+//         {
+//           "name": "Tiger Hill",
+//           "type": "Hill Station",
+//           "details": {
+//             "famousFor": "Sunrise View of Kanchenjunga",
+//             "altitude": "2590m"
+//           },
+//           "children": []
+//         },
+//         {
+//           "name": "Ghoom Monastery",
+//           "type": "Monastery",
+//           "details": {
+//             "founded": "1850s",
+//             "buddhistSect": "Gelug"
+//           },
+//           "children": []
+//         }
+//       ]
+//     }
+//   ]
+// }
