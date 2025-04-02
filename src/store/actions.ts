@@ -1,7 +1,4 @@
 import { createAction } from "@reduxjs/toolkit";
-import { StatesTypes } from "../query/states/types";
-
-export const addDogs = createAction<{list : string[]}>("addDogs")
-export const addBreed = createAction<{breed : string, image: string}>("addBreed")
+import { StatesTypes } from "../api/types";
 
 export const addStates = createAction<StatesTypes>("addStates")

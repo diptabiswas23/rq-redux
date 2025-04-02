@@ -1,13 +1,14 @@
-import { useCallback, useMemo } from 'react'
-import { getStateQueryOption, statesQueryClient } from '.';
-import { StatesTypes } from './types';
+import { useCallback,  useState } from 'react'
+import { StatesTypes } from '../../api/types';
+import { getStateQuery } from './getStateQuery';
+import { setQueryData } from '..';
+import { FetchQueryOptions } from '@tanstack/react-query';
 
 const useUpdateStateQuery = () => {
-
-    const options = useMemo(() => getStateQueryOption(), []);
+    const [query] = useState(() => getStateQuery<FetchQueryOptions<StatesTypes>>());
 
     const update = useCallback(() => {
-        statesQueryClient.setQueryData(options.queryKey, (cacheData) => {
+        setQueryData(query , (cacheData) => {
 
             if (cacheData) {
 
@@ -28,7 +29,8 @@ const useUpdateStateQuery = () => {
             }
 
         })
-    }, [options?.queryKey])
+
+    }, [query])
 
     return {
         update

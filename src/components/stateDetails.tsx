@@ -1,4 +1,4 @@
-import { StateTypes } from "../query/states/types";
+import { StateTypes } from "../api/types";
 
 type Props = {
   state: StateTypes;

@@ -3,7 +3,7 @@ import useQueryListener from "../useQueryListener";
 import {  addStates } from "../../store/actions";
 import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import { getStateQueryOption, statesQueryClient } from ".";
-import { StatesTypes } from "./types";
+import { StatesTypes } from "../../api/types";
 import { useAppSelector } from "../../store";
 import { QueryAppObserver } from "../../utils/QueryAppObserver";
 import { queryClient } from "../../utils";

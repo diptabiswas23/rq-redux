@@ -1,11 +1,12 @@
-import { useStatesQueryV1, useStatesQueryV2 } from '../query/states/useStatesQuery';
+// import { useStatesQueryV1, useStatesQueryV2 } from '../query/states/useStatesQueryDeprecated';
 import StateDetails from '../components/stateDetails';
 import useUpdateStateQuery from '../query/states/useUpdateStateQuery';
 import StateDescription from '../components/stateDescription';
-import { StatesTypes, StateTypes } from '../query/states/types';
+import {  StateTypes } from '../api/types';
+import useStatesQuery from '../query/states/useStatesQuery';
 
 const StatePage  = () => {
-    const {data = [] as StatesTypes} = useStatesQueryV2<StatesTypes>();
+    const {data = []} = useStatesQuery();
     const {update} = useUpdateStateQuery()
     console.log(`RENDER: StatePage(Parent) `)
 

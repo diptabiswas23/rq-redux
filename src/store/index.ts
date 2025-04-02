@@ -1,11 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { dogReducer, stateReducer } from "./reducer";
+import {  stateReducer } from "./reducer";
 import { useDispatch, useSelector } from "react-redux";
 
 
 export const store = configureStore({
     reducer : {
-        dogReducer: dogReducer,
         stateReducer: stateReducer
     },
     devTools: true,

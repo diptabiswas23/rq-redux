@@ -42,23 +42,6 @@ const useQueryListener = <T,>({ client, key, listener }: Props<T>) => {
     };
   }, [client, dispatch, key, listener]);
 
-  const invalidateQuery = () => {
-    client.invalidateQueries({
-      queryKey: key
-    });
-  }
-
-  const removeQuery = () => {
-    client.removeQueries({
-      queryKey: key
-    });
-  }
-
-
-  return {
-    invalidateQuery,
-    removeQuery
-  };
 };
 
 export default useQueryListener;

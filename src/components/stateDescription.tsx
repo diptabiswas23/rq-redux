@@ -1,12 +1,18 @@
 import { memo } from 'react'
-import  { useStatesQueryV1, useStatesQueryV2 } from '../query/states/useStatesQuery';
+import useStateFromRedux from '../query/states/useStatefromRedux';
+import useStatesQuery from '../query/states/useStatesQuery';
+// import useStateFromRedux from '../query/states/useStatefromRedux';
 
 
 const StateDescription = () => {
   // isFetching Should not render
-  const {isFetching} = useStatesQueryV2(
-    // {select : (state) => state[0]?.children[0].name}
+  const {isFetching } = useStatesQuery(
+    {select : (state) => state[0]?.children[0].name}
   );
+
+  // const data = useStateFromRedux({select : (state) => state.stateReducer?.states[0].name})
+
+  // const data = useStateFromRedux()
   console.log(`RENDER: StateDescription(Child) `)
 
 
